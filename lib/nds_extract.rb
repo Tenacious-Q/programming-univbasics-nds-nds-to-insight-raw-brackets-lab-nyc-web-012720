@@ -36,7 +36,7 @@ while director_index < directors_database.length do
     movie_index += 1
   end
 puts total
-result[[directors_database][director_index][:name]] => total
+result[directors_database[director_index][:name]] = total
 movie_index += 1
 director_index += 1
 end
