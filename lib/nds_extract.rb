@@ -31,11 +31,14 @@ while director_index < directors_database.length do
     total += directors_database[director_index][:movies][movie_index][:worldwide_gross]
     movie_index += 1
   end
-result[[director_index][:name]] => total
+result[[directors_database][:name]] => directors_database[director_index][:movies][movie_index][:worldwide_gross]
 movie_index += 1
 director_index += 1
 end
 puts total
+
+# result hash (abbreviated)
+# h[dd[1][:name]] = dd[1][:movies][0][:worldwide_gross]
 
 =begin: This gets the grand total for all directors.
 
