@@ -22,6 +22,7 @@ def directors_totals(nds)
   result
 end
 
+result = {}
 
 director_index = 0
 while director_index < directors_database.length do
