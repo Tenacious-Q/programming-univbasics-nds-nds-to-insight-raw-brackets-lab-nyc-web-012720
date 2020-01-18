@@ -22,26 +22,36 @@ def directors_totals(nds)
   result
 end
 
-
-#pp directors_database
-puts directors_database[5][:movies][0][:worldwide_gross]
-
+grand_total = 0
 director_index = 0
-#while director_index < directors_database[director_index].count do
-while director_index < directors_database.count do
-  puts "director_index = #{director_index}"
-  puts directors_database[director_index][:name]
-  puts directors_database[director_index][:movies][2][:worldwide_gross]
-  puts "director_index is now #{director_index} "
-  director_index += 1
-  puts "director_index is now #{director_index} "
+while director_index < dd.length do
+  movie_index = 0
+  while movie_index < dd[director_index][:movies].count do
+    grand_total += dd[director_index][:movies][movie_index][:worldwide_gross]
+    movie_index += 1
+  end
+movie_index += 1
+director_index += 1
 end
 
+# pp directors_database
+# puts directors_database[5][:movies][0][:worldwide_gross]
+
+#director_index = 0
+#while director_index < directors_database[director_index].count do
+#while director_index < directors_database.count do
+#  puts "director_index = #{director_index}"
+#  puts directors_database[director_index][:name]
+#  puts directors_database[director_index][:movies][2][:worldwide_gross]
+#  puts "director_index is now #{director_index} "
+#  director_index += 1
+#  puts "director_index is now #{director_index} "
+#end
 
 
-
-jaws_gross = directors_database[0][:movies][0][:worldwide_gross]
-puts jaws_gross
+#jaws_gross = directors_database[0][:movies][0][:worldwide_gross]
+#puts jaws_gross
+#
 # Spielberg's total worldwide_gross is
 # directors_database[0][:movies][0][:worldwide_gross] +
 # directors_database[0][:movies][1][:worldwide_gross] +
