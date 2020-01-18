@@ -24,10 +24,10 @@ end
 
 grand_total = 0
 director_index = 0
-while director_index < dd.length do
+while director_index < directors_database.length do
   movie_index = 0
-  while movie_index < dd[director_index][:movies].count do
-    grand_total += dd[director_index][:movies][movie_index][:worldwide_gross]
+  while movie_index < directors_database[director_index][:movies].count do
+    grand_total += dd[directors_database][:movies][movie_index][:worldwide_gross]
     movie_index += 1
   end
 movie_index += 1
