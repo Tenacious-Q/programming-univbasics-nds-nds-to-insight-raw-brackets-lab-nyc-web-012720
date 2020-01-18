@@ -4,21 +4,21 @@ require 'directors_database'
 def directors_totals(nds)
   result = {}
   director_index = 0
-  while director_index < directors_database.length do
+  while director_index < nds.length do
     movie_index = 0
     total = 0
-    while movie_index < directors_database[director_index][:movies].count do
-      total += directors_database[director_index][:movies][movie_index][:worldwide_gross]
+    while movie_index < nds[director_index][:movies].count do
+      total += nds[director_index][:movies][movie_index][:worldwide_gross]
       movie_index += 1
     end
-  result[directors_database[director_index][:name]] = total
+  result[nds[director_index][:name]] = total
   movie_index += 1
   director_index += 1
   end
   result
 end
 
-
+# Not sure why it let me use "directors_database" variable instead of "NDS"
 
 
 result = {}
