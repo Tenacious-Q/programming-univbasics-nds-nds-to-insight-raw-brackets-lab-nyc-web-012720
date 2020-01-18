@@ -41,6 +41,7 @@ movie_index += 1
 director_index += 1
 end
 puts total
+puts result
 
 # result hash (abbreviated)
 # h[dd[1][:name]] = dd[1][:movies][0][:worldwide_gross]
