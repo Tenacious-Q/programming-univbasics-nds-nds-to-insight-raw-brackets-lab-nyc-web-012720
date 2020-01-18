@@ -12,11 +12,42 @@ def directors_totals(nds)
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
+
   # ...
   # ...
   # ...
   #
   #
   # Be sure to return the result at the end!
-  nil
+  result
 end
+
+
+#pp directors_database
+puts directors_database[5][:movies][0][:worldwide_gross]
+
+director_index = 0
+#while director_index < directors_database[director_index].count do
+while director_index < directors_database.count do
+  puts "director_index = #{director_index}"
+  puts directors_database[director_index][:name]
+  puts directors_database[director_index][:movies][2][:worldwide_gross]
+  puts "director_index is now #{director_index} "
+  director_index += 1
+  puts "director_index is now #{director_index} "
+end
+
+
+
+
+jaws_gross = directors_database[0][:movies][0][:worldwide_gross]
+puts jaws_gross
+# Spielberg's total worldwide_gross is
+# directors_database[0][:movies][0][:worldwide_gross] +
+# directors_database[0][:movies][1][:worldwide_gross] +
+# directors_database[0][:movies][2][:worldwide_gross] +
+# directors_database[0][:movies][3][:worldwide_gross] +
+# ...etc while movie_index < :movies.count
+#
+#
+#
