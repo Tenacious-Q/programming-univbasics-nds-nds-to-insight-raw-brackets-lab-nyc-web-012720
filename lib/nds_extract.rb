@@ -33,6 +33,8 @@ while director_index < directors_database.length do
 movie_index += 1
 director_index += 1
 end
+puts grand_total
+
 
 # pp directors_database
 # puts directors_database[5][:movies][0][:worldwide_gross]
