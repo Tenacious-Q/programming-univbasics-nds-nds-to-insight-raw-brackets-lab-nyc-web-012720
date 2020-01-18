@@ -22,6 +22,23 @@ def directors_totals(nds)
   result
 end
 
+
+director_index = 0
+while director_index < directors_database.length do
+  movie_index = 0
+  total = 0
+  while movie_index < directors_database[director_index][:movies].count do
+    total += directors_database[director_index][:movies][movie_index][:worldwide_gross]
+    movie_index += 1
+  end
+result[[director_index][:name]] => total
+movie_index += 1
+director_index += 1
+end
+puts total
+
+=begin: This gets the grand total for all directors.
+
 grand_total = 0
 director_index = 0
 while director_index < directors_database.length do
@@ -34,6 +51,7 @@ movie_index += 1
 director_index += 1
 end
 puts grand_total
+=end
 
 
 # pp directors_database
