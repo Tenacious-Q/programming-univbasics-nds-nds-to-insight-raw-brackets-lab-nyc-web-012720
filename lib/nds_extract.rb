@@ -22,6 +22,9 @@ def directors_totals(nds)
   result
 end
 
+
+
+
 result = {}
 
 director_index = 0
@@ -33,7 +36,7 @@ while director_index < directors_database.length do
     movie_index += 1
   end
 puts total
-#result[[directors_database][director_index][:name]] = directors_database[director_index][:movies][movie_index][:worldwide_gross]
+result[[directors_database][director_index][:name]] = total
 movie_index += 1
 director_index += 1
 end
