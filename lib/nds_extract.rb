@@ -31,8 +31,9 @@ while director_index < directors_database.length do
   while movie_index < directors_database[director_index][:movies].count do
     total += directors_database[director_index][:movies][movie_index][:worldwide_gross]
     movie_index += 1
-    puts total
+    #puts total
   end
+puts total
 #result[[directors_database][director_index][:name]] = directors_database[director_index][:movies][movie_index][:worldwide_gross]
 movie_index += 1
 director_index += 1
