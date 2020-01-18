@@ -18,7 +18,7 @@ def directors_totals(nds)
   result
 end
 
-# Not sure why it let me use "directors_database" variable instead of "NDS"
+# Also works with "directors_database" variable instead of "nds"
 
 
 result = {}
